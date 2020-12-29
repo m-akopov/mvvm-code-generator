@@ -14,11 +14,10 @@
 - [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
 
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your friend while working at APP3Null on Android Projects. <br/> <br/>
 
-Its purpose is to make android devs' life easier by generating MVVM structure of a single screen. <br/> <br/>
+This Fancy Plugin's purpose is to make APP3Null's Android devs' life easier by generating MVVM structure of a single screen. <br/> <br/>
 
-IT will help our team buddies: Gevork Keropyan, Artem Lechchenko, Hayk Baghdasaryan and Bacho to be more productive.
+IT will help our team buddies(Gevork Keropyan, Artem Lechchenko, Hayk Baghdasaryan and Bacho) to be more productive.
 
 <!-- Plugin description end -->
 

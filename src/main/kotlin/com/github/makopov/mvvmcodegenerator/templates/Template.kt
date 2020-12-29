@@ -32,6 +32,8 @@ val mviSetupTemplate
             suggest = { fragmentToLayout(entityName.value.toLowerCase()) }
         }
 
+        println("Recipeeeeee Akopov MIsha")
+
         widgets(
                 TextFieldWidget(entityName),
                 TextFieldWidget(layoutName),

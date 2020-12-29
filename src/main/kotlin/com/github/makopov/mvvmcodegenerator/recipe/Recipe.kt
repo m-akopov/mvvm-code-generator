@@ -17,6 +17,8 @@ fun RecipeExecutor.mviSetup(
         entityName: String,
         layoutName: String
 ) {
+
+    println("Akopovvv  RecipeExecutor.mviSetup")
     val (projectData) = moduleData
     val project = projectInstance ?: return
 
