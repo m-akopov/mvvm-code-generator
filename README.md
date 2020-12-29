@@ -14,11 +14,12 @@
 - [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
 
 <!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
+This Fancy IntelliJ Platform Plugin is going to be your friend while working at APP3Null on Android Projects. <br/> <br/>
 
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be extracted by the [Gradle](/build.gradle.kts) during the build process.
+Its purpose is to make android devs' life easier by generating MVVM structure of a single screen. <br/> <br/>
 
-To keep everything working, do not remove `<!-- ... -->` sections. 
+IT will help our team buddies: Gevork Keropyan, Artem Lechchenko, Hayk Baghdasaryan and Bacho to be more productive.
+
 <!-- Plugin description end -->
 
 ## Installation
