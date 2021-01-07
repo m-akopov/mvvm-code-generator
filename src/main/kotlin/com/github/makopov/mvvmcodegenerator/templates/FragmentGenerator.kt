@@ -18,6 +18,7 @@ import org.koin.android.viewmodel.ext.android.viewModel
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import ${"[a-z]*\\.[a-z]*\\.[a-z]*".toRegex().find(packageName)?.value}.databinding.Fragment${entityName}Binding
 
 
 class ${entityName}Fragment : BaseFragment<${entityName}ViewState, ${entityName}ViewModel>() {
@@ -64,5 +65,5 @@ class ${entityName}Fragment : BaseFragment<${entityName}ViewState, ${entityName}
     }
 }
 
-
 """
+
