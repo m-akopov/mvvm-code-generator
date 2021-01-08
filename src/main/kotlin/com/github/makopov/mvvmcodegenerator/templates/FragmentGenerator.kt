@@ -18,12 +18,12 @@ import org.koin.android.viewmodel.ext.android.viewModel
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import ${"[a-z]*\\.[a-z]*\\.[a-z]*".toRegex().find(packageName)?.value}.databinding.Fragment${entityName}Binding
+import ${"[a-z]*\\.[a-z]*\\.[a-z]*".toRegex().find(packageName)?.value}.databinding.Fragment${entityName.toLowerCase().capitalize()}Binding
 
 
 class ${entityName}Fragment : BaseFragment<${entityName}ViewState, ${entityName}ViewModel>() {
 
-    private var _binding: Fragment${entityName}Binding? = null
+    private var _binding: Fragment${entityName.toLowerCase().capitalize()}Binding? = null
     private val binding get() = _binding!!
 
     private val viewModel: ${entityName}ViewModel by viewModel()
@@ -35,7 +35,7 @@ class ${entityName}Fragment : BaseFragment<${entityName}ViewState, ${entityName}
         savedInstanceState: Bundle?
     ): View? {
         super.onCreateView(inflater, container, savedInstanceState)
-        _binding = Fragment${entityName}Binding.inflate(inflater, container, false)
+        _binding = Fragment${entityName.toLowerCase().capitalize()}Binding.inflate(inflater, container, false)
         return binding.root
     }
 
