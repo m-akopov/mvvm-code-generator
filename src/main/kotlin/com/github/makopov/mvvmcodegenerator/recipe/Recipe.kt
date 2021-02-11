@@ -46,6 +46,9 @@ fun RecipeExecutor.mviSetup(
     getShowErrorStateCode(packageName, entityName)
             .save(directorySrc, "$packageName.actions", "ShowErrorAction.kt")
 
+    getToNextScreenActionCode(packageName, entityName)
+            .save(directorySrc, "$packageName.actions", "ToNextScreenAction.kt")
+
     getLayoutCode(packageName, entityName)
             .save(directoryRes, "layout", "${layoutName}.xml")
 

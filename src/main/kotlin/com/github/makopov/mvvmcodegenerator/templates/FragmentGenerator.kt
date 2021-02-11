@@ -57,11 +57,18 @@ class ${entityName}Fragment : BaseFragment<${entityName}ViewState, ${entityName}
         viewState.showError?.getValue().notNull {
             dismissAndClearDialogs()
             requireContext().showThrowableMessage(it)
+        } 
+        
+        viewState.toNextScreen?.getValue().notNull {
+            dismissAndClearDialogs()
+            //findNavController().navigate(R.id.)
         }
     }
 
     override fun renderView(savedInstanceState: Bundle?) {
+        with(binding){
 
+        }
     }
 }
 

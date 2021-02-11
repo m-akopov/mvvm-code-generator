@@ -35,3 +35,21 @@ class ShowLoaderAction : ViewStateAction<${entityName}ViewState> {
 }
 
 """
+
+fun getToNextScreenActionCode(
+        packageName: String,
+        entityName: String
+) = """
+package $packageName.actions
+
+import com.app3null.basestructure.actions.ViewStateAction
+import com.app3null.basestructure.models.DisposableValue
+import $packageName.${entityName}ViewState
+
+class ToNextScreenAction : ViewStateAction<${entityName}ViewState> {
+    override fun newState(oldState: ${entityName}ViewState): ${entityName}ViewState {
+        return oldState.copy(toNextScreen = DisposableValue(true))
+    }
+}
+
+"""
